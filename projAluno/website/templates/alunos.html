@@ -1,0 +1,13 @@
+<table>
+    <tbody>
+    {% for aluno in alunos %}
+        <tr>
+            <td>{{ aluno.nome }}</td>
+            <td>{{ aluno.sobrenome }}</td>
+            <td>{{ aluno.cpf }}</td>
+            <td>{{ aluno.celular }}</td>
+            <td>{{ aluno.email }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
