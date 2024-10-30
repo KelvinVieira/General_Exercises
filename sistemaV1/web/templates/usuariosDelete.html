@@ -1,0 +1,11 @@
+<form>
+    {% csrf_token %}
+
+    Certeza da exclusão deste usuário <b>{{usuario.nome}}</b>?
+    <br><br>
+
+    <button type="button">
+        <a href="{%url 'lista_usuarios' %}"> Cancelar </a>
+    </button>
+    <button> Excluir </button>
+</form>
