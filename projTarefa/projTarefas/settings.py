@@ -191,6 +191,13 @@ Downloading mysqlclient-2.2.6-cp313-cp313-win_amd64.whl (207 kB)
 Installing collected packages: mysqlclient
 Successfully installed mysqlclient-2.2.6
 
+C:\>pip install django-widget-tweaks
+Collecting django-widget-tweaks
+  Downloading django_widget_tweaks-1.5.0-py3-none-any.whl.metadata (13 kB)
+Downloading django_widget_tweaks-1.5.0-py3-none-any.whl (9.0 kB)
+Installing collected packages: django-widget-tweaks
+Successfully installed django-widget-tweaks-1.5.0
+
 C:\>django-admin
 
 Type 'django-admin help <subcommand>' for help on a specific subcommand.
