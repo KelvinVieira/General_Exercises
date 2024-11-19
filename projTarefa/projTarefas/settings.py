@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "projTarefas",
     "wbste",
-    #"widget-tweaks"
+    "widget-tweaks"
 ]
 
 MIDDLEWARE = [
@@ -77,18 +77,23 @@ WSGI_APPLICATION = "projTarefas.wsgi.application"
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.mysql",
-        #"NAME": BASE_DIR / "db.sqlite3",
-        "NAME": "db_tarefas",
-        "USER": "root",
-        "PASSWORD": "123456",
-        "HOST": "localhost",
-        "PORT": "3306",
-        "OPTIONS": {
-            "charset": "utf8mb4",  # Configuração recomendada para suporte a UTF-8 completo
-        }
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        #'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': 'db_tarefas',
+        'USER': 'root',
+        'PASSWORD': '123456',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
+        #'options': {
+        #    'ssl': {
+        #        'ca': '/path/to/ca.pem',
+        #        'cert': '/path/to/client-cert.pem',
+        #        'key': '/path/to/client-key.pem'
+        #    }
+        #}
     }
+
 }
 
 
@@ -122,6 +127,7 @@ USE_I18N = True
 
 USE_TZ = True
 
+USE_L10N = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
