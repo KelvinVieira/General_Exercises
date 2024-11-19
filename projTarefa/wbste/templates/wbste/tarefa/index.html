@@ -1,0 +1,40 @@
+<!-- Estendemos do template base -->
+{% extends "wbste/_layouts/base.html" %}
+
+<!-- Bloco que define o <title></title> da nossa página -->
+{% block title %}Página Inicial{% endblock %}
+
+<!-- Bloco de conteúdo da nossa página -->
+{% block conteudo %}
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Definir Tarefas</h5>
+                        <p class="card-text">
+                            Defina aqui uma nova <code>tarefa</code>.
+                        </p>
+                        <a href="{% url 'wbste:tarefas_criacao' %}" class="btn btn-primary">
+                            Nova Tarefa
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Lista de Tarefas</h5>
+                        <p class="card-text">
+                            Veja aqui a lista de <code>tarefas</code> definidas.
+                        </p>
+                        <a href="{% url 'wbste:tarefas_listagem' %}"
+                           class="btn btn-primary">
+                            Vá para Lista
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
