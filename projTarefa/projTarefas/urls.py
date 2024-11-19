@@ -18,5 +18,6 @@ from django.contrib import admin
 from django.urls import path
 
 urlpatterns = [
+    path('', include('wbste.urls', namespace='wbste')),
     path("admin/", admin.site.urls),
 ]
